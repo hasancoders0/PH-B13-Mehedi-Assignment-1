@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #fff;
+    background-color: #fbfbfb;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #001931;
@@ -58,21 +58,21 @@ p {
 header {
     padding: 16px 0;
 }
-.inner-section {
+header .inner-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo-wrapper img {
+header .logo-wrapper img {
     width: 140px;
 }
-.navigation-wrapper ul {
+header .navigation-wrapper ul {
     display: flex;
     list-style-type: none;
     column-gap: 32px;
 }
 
-.navigation-wrapper ul li a {
+header .navigation-wrapper ul li a {
     text-decoration: none;
     color: #000000;
     font-weight: 500;
@@ -93,7 +93,7 @@ header {
     display: flex;
     align-items: center;
 }
-.active-indicator {
+.hero-section .active-indicator {
     display: flex;
     width: fit-content;
     background: #fff;
@@ -106,7 +106,7 @@ header {
     column-gap: 6px;
     line-height: 1;
 }
-.active-indicator .dot img {
+.hero-section .active-indicator .dot img {
     width: 16px;
     height: auto;
         margin-bottom: -2px;
@@ -142,4 +142,59 @@ header {
     line-height: 24px;
     margin-bottom: 32px;
     color: #fff;
+}
+
+/*==================
+  Notes Section Styles
+ =================== */
+.notes-section {
+    padding: 80px 0;
+}
+.notes-section .title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.notes-section p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.notes-section .img-card-outer {
+    display: flex;
+    justify-content: space-between;
+}
+.notes-section .image-card {
+    width: calc(25% - 24px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.notes-section .image-wrapper {
+    background: #F95555;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+.notes-section .image-card .image-wrapper img {
+    width: auto;
+}
+.notes-section .image-card .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
 }
