@@ -11,7 +11,7 @@ body{
     background-color: #fbfbfb;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #001931;
+  color: #222222;
 }
 p {
   color: #627382;
@@ -26,11 +26,12 @@ p {
     font-size: 16px;
     font-weight: 600;
     font-family: inter, sans-serif;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     column-gap: 10px;
+    letter-spacing: 0.5px;
 }
 .btn img {
     margin-bottom: -5px;
@@ -40,6 +41,11 @@ p {
     background-color: #30B868;
     border-color: #30B868;
     color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.btn-primary:hover {
+    background-color: #222222;
+    border-color: #222222;
 }
 .btn-secondary {
     background-color: transparent;
@@ -74,10 +80,14 @@ header .navigation-wrapper ul {
 
 header .navigation-wrapper ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #222222;
     font-weight: 500;
     font-size: 16px;
     font-family: inter, sans-serif;
+    transition: all 0.3s ease;
+}
+header .navigation-wrapper ul li a:hover {
+    border-bottom: 1px solid #222222;
 }
 
 
@@ -129,13 +139,20 @@ header .navigation-wrapper ul li a {
     margin: auto;
     text-align: center;
 }
+
+.hero-section .hero-text-wrapper {
+    text-align: center;
+}
 .hero-section .hero-text-wrapper h1 {
     font-size: 72px;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 24px;
+    line-height: 1;
+    margin-bottom: 34px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.hero-section .hero-text-wrapper .green-text {
+    color: #30b868;
 }
 .hero-section .hero-text-wrapper p {
     font-size: 18px;
@@ -143,7 +160,14 @@ header .navigation-wrapper ul li a {
     margin-bottom: 32px;
     color: #fff;
 }
-
+.hero-section .btn-primary:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+.hero-section .btn-secondary:hover {
+    background-color: #30b868;
+    border-color: #30b868;
+}
 /*==================
   Notes Section Styles
  =================== */
@@ -245,3 +269,88 @@ header .navigation-wrapper ul li a {
 .brain-section .text-wrapper li img{
     margin-bottom: -5px;
 }
+
+
+/*==================
+  Early Access Section Styles
+ =================== */
+.early-access-section {
+    padding: 60px 0;
+}
+.early-access-section .inner-section {
+    text-align: center;
+    padding: 80px 40px;
+    background: #f7f6f2;
+    border-radius: 12px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 4px;
+}
+.early-access-section .title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.early-access-section p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.early-access-section .button-wrapper {
+    margin-bottom: 14px;
+}
+
+/*==================
+  Footer Section Styles
+ =================== */
+footer {
+    background-color: #001931;
+    color: #ffffff;
+    text-align: center;
+}
+footer .inner-section {
+    padding-top: 120px;
+    margin-top: 40px;
+}
+footer .footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer h5 {
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 14px;
+}
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+footer ul li {
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul li img{
+    width: 100%;
+    height: auto;
+}
+
+footer .copyright-wrapper {
+    padding: 24px 0;
+    margin-top: 80px;
+    border-top: 1px solid #414141;
+}
+footer .copyright-wrapper p{
+    color: #fafafa;
+    font-weight: 400;
+}
+
