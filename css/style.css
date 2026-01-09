@@ -148,7 +148,7 @@ header .navigation-wrapper ul li a {
   Notes Section Styles
  =================== */
 .notes-section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 .notes-section .title {
     font-size: 48px;
@@ -197,4 +197,51 @@ header .navigation-wrapper ul li a {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 24px;
+}
+
+
+/*==================
+  Brain Section Styles
+ =================== */
+.brain-section {
+    padding: 60px 0;
+}
+.brain-section .inner-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 60px;
+}
+.brain-section .text-wrapper,
+.brain-section .image-wrapper {
+    width: 50%;
+}
+.brain-section .text-wrapper h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #30B868;
+    text-transform: uppercase;
+}
+.brain-section .text-wrapper h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+.brain-section .text-wrapper p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 32px;
+}
+.brain-section .text-wrapper li {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 6px 0;
+}
+.brain-section .text-wrapper li img{
+    margin-bottom: -5px;
 }
